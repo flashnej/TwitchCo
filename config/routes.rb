@@ -6,5 +6,11 @@ Rails.application.routes.draw do
   get '/contact-us', to: 'static_pages#index'
 
   devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  namespace :api do
+    namespace :v1 do
+      resources :candidates, only: [:show, :create]
+    end
+  end
+
 end
