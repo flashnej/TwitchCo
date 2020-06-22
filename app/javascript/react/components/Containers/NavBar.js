@@ -4,7 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 const NavBar = () => {
 	return (
 		<Navbar bg='light' expand='lg' fixed='top'>
-			<Navbar.Brand href='#home'>Rushmore Recruiting</Navbar.Brand>
+			<Navbar.Brand href='/'>Rushmore Recruiting</Navbar.Brand>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav className='mr-auto'>

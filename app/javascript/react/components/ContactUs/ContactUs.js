@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './ContactUs.scss';
+// import './ContactUs.scss';
 import { Button, Input } from 'semantic-ui-react';
 
 const ContactUs = () => {
