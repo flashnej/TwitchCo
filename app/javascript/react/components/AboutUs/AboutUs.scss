@@ -1,0 +1,46 @@
+.AboutUs {
+  background-color: #F5F5F5;
+  font-size: 18px;
+	.title {
+		padding-top: 100px;
+		padding-bottom: 40px;
+		background-color: #024b6e;
+		color: #f5f5f5;
+		font-size: 35px;
+	}
+	.testimony-container {
+		height: 200px;
+		font-size: 20px;
+		background-color: #006394;
+	}
+	.testimony,
+	.attribution {
+		color: #c5d8e4;
+		padding: 25px;
+	}
+	.text-block {
+		height: 100%;
+		padding: 20px 200px;
+		background-color: #f5f5f5;
+	}
+
+	.header {
+		font-size: 40px;
+		font-weight: 700;
+		color: #006394;
+		padding: 20px;
+		.orange {
+			color: #ff8300;
+		}
+  }
+  .contact-us-push {
+    margin: 40px 100px;
+  }
+  .employee-testimony {
+    margin: 20px 200px;
+  }
+  .employee-attribution {
+    font-weight: 700;
+    padding: 20px 10px;
+  }
+}

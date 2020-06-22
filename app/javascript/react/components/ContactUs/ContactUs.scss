@@ -1,0 +1,14 @@
+.ContactUs {
+	background-color: #f5f5f5;
+	padding: 60px 100px;
+	.title {
+		font-size: 35px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    .input {
+      padding: 10px;
+    }
+  }
+}
