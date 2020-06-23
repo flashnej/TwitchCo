@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Blog.scss';
+import { Redirect, Link } from "react-router-dom";
 import BlogTile from './BlogTile'
 
 
@@ -27,6 +28,7 @@ const Blog = () => {
   if (blogs.length !== 0) {
     blogTiles = blogs.map((blog) => {
       return <BlogTile
+              key={blog.id}
               blog={blog}
               />
     })
@@ -39,8 +41,12 @@ const Blog = () => {
 
 	return (
     <div>
-		<h2> Hi from Blog </h2>
-    {blogTiles}
+  		<h2> Blog Posts: </h2>
+      <div className="grid-container">
+        <div className="grid-x grid-margin-x">
+          {blogTiles}
+        </div>
+      </div>
     </div>
 	);
 };

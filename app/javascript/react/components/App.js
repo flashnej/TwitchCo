@@ -9,22 +9,25 @@ import ContactUs from './ContactUs/ContactUs';
 import JobSeekers from './JobSeekers/JobSeekers';
 import Home from './Home/Home';
 import Blog from './Blog/Blog';
+import BlogShowPage from './Blog/BlogShowPage'
 
 function App() {
-	return (
-		<div className='App'>
-			<NavBar />
-			<BrowserRouter>
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route exact path='/about' component={AboutUs} />
-					<Route exact path='/contact-us' component={ContactUs} />
-					<Route exact path='/job-seekers' component={JobSeekers} />
-					<Route exact path='/blog' component={Blog} />
-				</Switch>
-			</BrowserRouter>
-		</div>
-	);
+  
+  return (
+    <div className="App">
+      <NavBar/>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={AboutUs}/>
+          <Route exact path="/contact-us" component={ContactUs}/>
+          <Route exact path="/job-seekers" component={JobSeekers}/>
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blogs/:id" component={BlogShowPage} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
