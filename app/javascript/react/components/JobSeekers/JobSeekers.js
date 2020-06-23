@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './JobSeekers.scss';
 import { Button, Input } from 'semantic-ui-react';
 
 const JobSeekers = () => {
