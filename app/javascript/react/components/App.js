@@ -8,6 +8,7 @@ import NavBar from './Containers/NavBar';
 import ContactUs from './ContactUs/ContactUs';
 import JobSeekers from './JobSeekers/JobSeekers';
 import Blog from './Blog/Blog';
+import BlogShowPage from './Blog/BlogShowPage'
 
 import Home from "./Containers/Home"
 
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/contact-us" component={ContactUs}/>
           <Route exact path="/job-seekers" component={JobSeekers}/>
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blogs/:id" component={BlogShowPage} />
         </Switch>
       </BrowserRouter>
     </div>

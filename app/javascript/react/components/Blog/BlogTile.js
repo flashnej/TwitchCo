@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect, Link } from "react-router-dom";
 
 
 const BlogTile = (props) => {
   let blog = props.blog
 
 	return (
-    <div>
-		<h2> {blog.title} </h2>
+    <div className="columns cell small-4">
+		<Link to={`/blogs/${props.blog.id}`}>{props.blog.title}</Link>
     <h4> {blog.author} </h4>
-    <p> {blog.body} </p>
+    <p> {blog.body.substr(0,100)}... </p>
     </div>
 	);
 };
