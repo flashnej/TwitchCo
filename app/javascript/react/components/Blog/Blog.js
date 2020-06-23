@@ -41,7 +41,7 @@ const Blog = () => {
 
 	return (
     <div>
-  		<h2> Hi from Blog </h2>
+  		<h2> Blog Posts: </h2>
       <div className="grid-container">
         <div className="grid-x grid-margin-x">
           {blogTiles}

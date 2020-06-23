@@ -5,4 +5,9 @@ class Api::V1::BlogsController < ApplicationController
     data = Blog.all
     render json: {user: current_user, blogs: data}
   end
+
+  def show
+    @blog = Blog.find(params[:id])
+    render json: {blog: @blog}
+  end
 end
