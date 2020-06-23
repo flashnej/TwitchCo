@@ -7,6 +7,7 @@ import AboutUs from './AboutUs/AboutUs';
 import NavBar from './Containers/NavBar';
 import ContactUs from './ContactUs/ContactUs';
 import JobSeekers from './JobSeekers/JobSeekers';
+import Blog from './Blog/Blog';
 
 import Home from "./Containers/Home"
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/about" component={AboutUs}/>
           <Route exact path="/contact-us" component={ContactUs}/>
           <Route exact path="/job-seekers" component={JobSeekers}/>
+          <Route exact path="/blog" component={Blog} />
         </Switch>
       </BrowserRouter>
     </div>
