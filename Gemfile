@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
 

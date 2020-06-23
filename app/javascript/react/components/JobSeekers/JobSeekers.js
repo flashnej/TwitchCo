@@ -16,16 +16,9 @@ const JobSeekers = () => {
       const droppackage = JSON.stringify({firstName: firstName, lastName: lastName, email: email});
       formData.append('resume', resume)
       formData.append('info', droppackage)
-      fetch(`http://localhost:5000/api/v1/candidates`, {
+      fetch(`http://localhost:3000/api/v1/candidates`, {
         method: "POST",
-        body: formData,
-      })
-      .then(response => {
-        if (response.ok) {
-          return response;
-        } else {
-          return response
-        }
+        body: formData
       })
       .then(response => response.json())
       .then(body => {
@@ -37,6 +30,7 @@ const JobSeekers = () => {
           setEmail('')
           document.getElementById("resumeField").value = "";
         } else {
+          debugger
           setMessage({message: "Error on Upload", class: "sad-notice"})
         }
       })
