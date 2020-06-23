@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.scss';
+// import './AboutUs.scss';
 import { Button } from 'semantic-ui-react';
 
 const AboutUs = () => {

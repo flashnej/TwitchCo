@@ -1,0 +1,55 @@
+.Home {
+	.charlotte {
+		background-image: url('./charlotte.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 600px;
+		position: relative;
+		margin-top: 50px;
+	}
+	.superimposed-text {
+		background-color: black;
+		opacity: 0.5;
+
+		height: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 300px;
+		padding: 30px;
+		margin: 0px 200px;
+		.text {
+			font-size: 30px;
+			color: white;
+			line-height: 125%;
+			font-weight: 600;
+		}
+	}
+	.info-section {
+    padding-bottom: 20px;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		flex-direction: column;
+		background-color: #024b6e;
+		color: white;
+		.title {
+      font-size: 30px;
+      padding: 30px 0px;
+      text-align: center;
+		}
+		.responsive,
+		.service,
+		.local-expertise {
+			display: flex;
+      flex-direction: column;
+      align-items: center;
+			padding: 10px;
+			.header {
+				padding: 10px;
+				font-size: 24px;
+			}
+		}
+	}
+}
