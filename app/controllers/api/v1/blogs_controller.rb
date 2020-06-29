@@ -8,6 +8,18 @@ class Api::V1::BlogsController < ApplicationController
 
   def show
     blog = Blog.find(params[:id])
-    render json: {blog: blog}
+    date = blog.created_at.localtime.strftime("%A, %B %d, %Y at %I:%M%p")
+    render json: {blog: blog, date: date}
+  end
+
+  def create
+    author = params["author"]
+    title = params["title"]
+    body = params["body"]
+    blog = Blog.new(author: author, title: title, body: body)
+
+    if blog.save
+      render json: Blog.all
+    end
   end
 end

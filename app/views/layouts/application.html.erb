@@ -13,6 +13,12 @@
 />
 </head>
 <body>
+  <%- if current_user -%>
+    <br/>
+    <br/>
+    <br/>
+    <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+  <%- end -%>
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">

@@ -7,7 +7,7 @@ const BlogTile = (props) => {
 
 	return (
     <div className="columns cell small-4">
-		<Link to={`/blogs/${props.blog.id}`}>{props.blog.title}</Link>
+		<Link to={`/blog/${props.blog.id}`}>{props.blog.title}</Link>
     <h4> {blog.author} </h4>
     <p> {blog.body.substr(0,100)}... </p>
     </div>

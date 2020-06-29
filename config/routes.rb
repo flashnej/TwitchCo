@@ -5,14 +5,14 @@ Rails.application.routes.draw do
   get '/job-seekers', to: 'static_pages#index'
   get '/contact-us', to: 'static_pages#index'
   get '/blog', to: 'static_pages#index'
-  get 'blog/:id', to: 'static_pages#index'
+  get '/blog/:id', to: 'static_pages#index'
 
   devise_for :users
 
   namespace :api do
     namespace :v1 do
       resources :candidates, only: [:show, :create]
-      resources :blogs, only: [:index, :show]
+      resources :blogs, only: [:index, :show, :create]
     end
   end
 
