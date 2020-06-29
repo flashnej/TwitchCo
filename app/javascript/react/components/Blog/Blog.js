@@ -21,7 +21,6 @@ const Blog = () => {
     .then((response) => response.json())
     .then((body) => {
       if (body.user) {
-        console.log(body.user.email)
         setAdmin(body.user)
       }
       setBlogs(body.blogs)
