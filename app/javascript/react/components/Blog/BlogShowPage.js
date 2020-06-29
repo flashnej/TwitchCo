@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
 const BlogShowPage = (props) => {
+  const [date, setDate] = useState('')
   const [blog, setBlog] = useState({
     title:'',
     author:'',
     body:'',
     created_at:''
   })
+
   let id = props.match.params.id
 
   useEffect(() => {
@@ -19,15 +21,16 @@ const BlogShowPage = (props) => {
     .then((response) => response.json())
     .then((body) => {
       setBlog(body.blog)
+      setDate(body.date)
     })
   }, []);
 
 	return (
-    <div className="columns cell small-4">
+    <div className="blogShowPage columns cell small-4">
 		<h1> {blog.title} </h1>
     <h2> {blog.author} </h2>
-    <p> {blog.create_at} </p>
-    <p> {blog.body} </p>
+    <p> {date} </p>
+    {blog.body}
     </div>
 	);
 };

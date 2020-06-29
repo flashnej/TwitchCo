@@ -12,7 +12,7 @@ import Blog from './Blog/Blog';
 import BlogShowPage from './Blog/BlogShowPage'
 
 function App() {
-  
+
   return (
     <div className="App">
       <NavBar/>
@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/contact-us" component={ContactUs}/>
           <Route exact path="/job-seekers" component={JobSeekers}/>
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/blogs/:id" component={BlogShowPage} />
+          <Route exact path="/blog/:id" component={BlogShowPage} />
         </Switch>
       </BrowserRouter>
     </div>
