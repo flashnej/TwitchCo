@@ -1,7 +1,19 @@
-.happy-notice {
-    background-color: green;
-}
+.JobSeekers {
+	background-color: #f5f5f5;
+	padding: 60px 100px;
+	.title {
+		font-size: 35px;
+  }
+  .happy-notice {
+      background-color: green;
+  }
 
-.sad-notice {
-  background-color: red;
+  .sad-notice {
+    background-color: red;
+  }
+
+  .inputs {
+    width: 50%;
+    text-align: center;
+  }
 }

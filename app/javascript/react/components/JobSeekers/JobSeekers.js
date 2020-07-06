@@ -41,9 +41,8 @@ const JobSeekers = () => {
 
 
       return (
-        <div className='ContactUs'>
-        <h1 className='title'>Contact Us</h1>
-        <h2>Hello</h2>
+        <div className='JobSeekers'>
+        <h1 className='title'>Submit Your Resume</h1>
         <div className={message.class}>
         {message.message}
         </div>
